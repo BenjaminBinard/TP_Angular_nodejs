@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MonObj } from '../util/MonObj.ts';
 
 @Component({
   selector: 'app-col-left',
@@ -11,5 +12,6 @@ export class ColLeftComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  texte = new MonObj();
+  texte.libelle = "Colonne de gauche par classe";
 }
