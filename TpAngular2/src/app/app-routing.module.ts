@@ -9,6 +9,7 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'form', component: FormComponent },
   { path: 'recup', component: RecupComponent },
+  { path: 'recup1/:valeur/:libelle', component: RecupComponent },
 ];
 
 @NgModule({
