@@ -7,11 +7,12 @@ import { MonObj } from '../util/MonObj.ts';
   styleUrls: ['./col-left.component.css']
 })
 export class ColLeftComponent implements OnInit {
-
+  texte:MonObj;
   constructor() { }
 
   ngOnInit() {
   }
-  texte = new MonObj();
-  texte.libelle = "Colonne de gauche par classe";
+  this.texte = new MonObj();
+  this.texte.libelle = "Colonne de gauche par classe";
+  console.log(this.texte);
 }

@@ -1,24 +1,23 @@
 export class MonObj{
-  private libelle : string;
-  private valeur : number;
+  private _libelle : string;
+  private _valeur : number;
 
   constructor(){
 
   }
   get libelle():string{
-    return this.libelle;
+    return this._libelle;
   }
 
   set libelle(newLibelle:string){
-    this.libelle = newLibelle;
+    this._libelle = newLibelle;
   }
 
   get valeur():number{
-    return this.valeur;
+    return this._valeur;
   }
 
   set valeur(newValeur:number){
-    this.valeur = newValeur;
+    this._valeur = newValeur;
   }
-
 }
