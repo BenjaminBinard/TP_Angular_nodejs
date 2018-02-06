@@ -2,10 +2,7 @@ export class MonObj{
   private _libelle : string;
   private _valeur : number;
 
-  constructor(){
-
-  }
-  get libelle():string{
+  get libelle(): string{
     return this._libelle;
   }
 

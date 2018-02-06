@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ColLeftComponent } from './col-left/col-left.component';
 import { ColRightComponent } from './col-right/col-right.component';
+//import { MonObj } from '../util/MonObj';
 
 
 @NgModule({

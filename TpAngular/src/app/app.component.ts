@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   //title = 'app';
   title = 'Angular';
+  maPropriete: any = {Var1:'Et Alors ?'};
 }
