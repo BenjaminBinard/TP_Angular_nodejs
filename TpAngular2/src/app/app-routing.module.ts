@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from'@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { FormComponent } from './form/form.component';
+import { RecupComponent } from './recup/recup.component';
 
 const appRoutes: Routes = [
-  /* { path: '', component: HomeComponent },*/
+  { path: '', component: HomeComponent },
+  { path: 'form', component: FormComponent },
+  { path: 'recup', component: RecupComponent },
 ];
 
 @NgModule({
