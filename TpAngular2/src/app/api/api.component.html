@@ -1,0 +1,15 @@
+<p>
+  recupdata works! {{valueRetour | json}}
+</p>
+  <br>
+  <table>
+    <tr>
+      <td>Code</td><td>Nom</td><td>Lat.</td><td>Long</td>
+    </tr>
+  <tr *ngFor="let countrie of valueRetour">
+    <td>{{ countrie.code }}</td>
+    <td>{{ countrie.name }}</td>
+    <td>{{ countrie.latitude }}</td>
+    <td>{{ countrie.longitude }}</td>
+  </tr>
+</table>

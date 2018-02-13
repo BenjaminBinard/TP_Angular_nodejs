@@ -4,12 +4,14 @@ import { Router } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { MonObj } from '../util/MonObj';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { RecupComponent } from './recup/recup.component';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ApiComponent } from './api/api.component';
 
 
 @NgModule({
@@ -18,11 +20,13 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FormComponent,
     RecupComponent,
     HomeComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ApiComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
