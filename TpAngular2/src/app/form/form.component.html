@@ -1,3 +1,22 @@
-<p>
-  form works!
-</p>
+<div class="container">
+    <h1>Nous voulons tout savoir !</h1>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="nom">nom</label>
+        <input type="text" class="form-control" id="nom" required>
+      </div>
+      <div class="form-group">
+        <label for="prenom">prenom</label>
+        <input type="text" class="form-control" id="prenom" required>
+      </div>
+      <div class="form-group">
+        <label for="type">Type</label>
+        <div *ngFor="let type of types">
+          <input  [value]="type" type="radio" name="genre">{{type}}
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+</div>
