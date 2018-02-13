@@ -16,10 +16,16 @@ export class RecupComponent implements OnInit {
   maValeur: any;
   monLibelle: any;
   ObjetFinal: MonObj;
+  incrClick(){
+    this.ObjetFinal.valeur++;
+  }
+  decClick(){
+    this.ObjetFinal.valeur--;
+  }
   constructor(private maRoute: ActivatedRoute) { }
 
   ngOnInit(){
-    ObjetFinal = new MonObj();
+    this.ObjetFinal = new MonObj();
     this.maValeur = this.maRoute.snapshot.paramMap.get('valeur');
     this.monLibelle = this.maRoute.snapshot.paramMap.get('libelle');
     if(this.maValeur == null){
@@ -27,8 +33,8 @@ export class RecupComponent implements OnInit {
       this.maValeur = 0;
       this.monLibelle = "test";
     }
-    this.ObjetFinal.valeur = maValeur;
-    this.ObjetFinal.libelle = monLibelle;
+    this.ObjetFinal.valeur = this.maValeur;
+    this.ObjetFinal.libelle = this.monLibelle;
   }
   console.log(ObjetFinal);
 }
